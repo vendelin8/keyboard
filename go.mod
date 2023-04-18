@@ -1,5 +1,5 @@
-module github.com/eiannone/keyboard
+module github.com/vendelin8/keyboard
 
-go 1.18
+go 1.20
 
-require golang.org/x/sys v0.0.0-20220520151302-bc2c85ada10a
+require golang.org/x/sys v0.7.0

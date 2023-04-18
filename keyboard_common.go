@@ -152,6 +152,12 @@ func GetKeys(bufferSize int) (<-chan KeyEvent, error) {
 	return inputComm, nil
 }
 
+// KeysForTesting returns the same channel as GetKeys, but in the other direction.
+// Available for sending keys while testing.
+func KeysForTesting() chan<- KeyEvent {
+	return inputComm
+}
+
 func Open() (err error) {
 	_, err = GetKeys(10)
 	return
